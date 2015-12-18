@@ -1,6 +1,6 @@
-## SASS&COMPASS view code
+### SASS&COMPASS view code
 
-### 【SCSS module】
+##### 【SCSS module】
 style.scss（上記モジュールインクルード）  
 ∟_common.scss（ヘッダー、フッター、ベースライン）  
 ∟_mixin.scss  
