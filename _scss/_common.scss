@@ -1,0 +1,121 @@
+@charset "utf-8";
+/*----------------------------------------------------
+ページ共通
+----------------------------------------------------*/
+body {
+	background: $main_color;
+	color: $font_color;
+	font-family: $base_font;
+}
+
+// リンク
+a {
+	&:link {
+		color: $link_color;
+	}
+	&:visited {
+		color: $link_color_visited;
+	}
+	&:hover {
+		text-decoration: none;
+		color: $link_color_hover;
+	}
+	&:active {
+		color: $link_color_active;
+	}
+}
+/*----------------------------------------------------
+大枠
+----------------------------------------------------*/
+#wrapper {
+	width: $base_width;
+	@include margin_LR_AUTO;
+}
+
+/*----------------------------------------------------
+ヘッダー
+----------------------------------------------------*/
+#header {
+	width: $base_width;
+	margin-bottom: $mb30;
+	background: #fff;
+		h1 {
+			width: 250px;
+			height: 150px;
+			a {
+				display: block;
+			}
+		}
+		ul.link {
+			overflow: hidden;
+			li {
+				float: left;
+				a {
+					display: block;
+				}
+			}
+		}
+}
+
+/*----------------------------------------------------
+ナビゲーション
+----------------------------------------------------*/
+
+// @import "sprites/*.png";
+
+@import "sprites/*.png";
+$sprites: sprite-map("sprites/*.png");
+@mixin hideout_text {
+  display: block;
+  text-indent: -9999px;
+}
+.icons-sprite {
+  @include hideout_text;
+  width: 32px;
+  height: 32px;
+}
+.facebook {
+  background-position: sprite-position( $sprites, facebook );
+}
+.rss {
+  background-position: sprite-position( $sprites, rss );
+}
+
+
+
+#nav {
+	@include clearfix;
+	li {
+		float: left;
+	}
+}
+
+/*----------------------------------------------------
+#contents
+----------------------------------------------------*/
+#contents {
+	@extend .clearfix;
+	width: $base_width - 20px;
+	padding: 10px;
+	margin-bottom: $mb30;
+	background: #ccc;
+	
+	.pageTop {
+		clear: both;
+		margin: 0;
+		text-align: right;
+	}
+}
+
+/*----------------------------------------------------
+フッター
+----------------------------------------------------*/
+#footer {
+	@include clearfix;
+	width: $base_width;
+	background: #ccc;
+	
+	.copyright {
+		text-align: center;
+	}
+}

@@ -1,0 +1,71 @@
+@charset "utf-8";
+// ===================================================================
+// 設定（変数）
+// ===================================================================
+
+// HTML5の場合は値を「false」から「true」にする
+$use_html5: false;
+
+// 汎用クラスを使用するか
+$use_extend_object: true;
+
+// 簡易ロールオーバーの値
+$opacity_value: .5;
+
+// 余白調整用のクラスを使用するか
+$use_spacing_classes: false;
+
+// 画像のパス
+$img_path: "../img/";
+
+// ベースフォント
+$base_font: "メイリオ", "Meiryo", verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+$base_font_ie: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+
+// ページ全体の横幅
+$base_width: 800px;
+
+// 下マージン
+$mb5: 5px !important;
+$mb10: 10px !important;
+$mb15: 15px !important;
+$mb20: 20px !important;
+$mb25: 25px !important;
+$mb30: 30px !important;
+$mb35: 35px !important;
+$mb40: 40px !important;
+$mb45: 45px !important;
+$mb50: 50px !important;
+$mb55: 55px !important;
+$mb60: 60px !important;
+$mb65: 65px !important;
+$mb70: 70px !important;
+$mb75: 75px !important;
+$mb80: 80px !important;
+$mb85: 85px !important;
+$mb90: 90px !important;
+$mb95: 95px !important;
+
+// メインカラー（ベースカラー）
+$main_color: #fff;
+
+// サブカラー
+$sub_color: #eee;
+
+// アクセントカラー
+$accent_color: #e73562;
+
+// ベーステキストカラー
+$font_color: #333;
+
+// ベースリンクカラー
+$link_color: #06f;
+$link_color_visited: #39f;
+$link_color_hover: #00f;
+$link_color_active: #00f;
+
+// 付与するベンダープレフィックス
+$set_prefix: -webkit-, -moz-, -ms-, -o-, '';
+
+// 角丸の初期値
+$br_value: 10px;

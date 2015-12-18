@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/* Reset Style */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  line-height: 1;
+  color: #000;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th {
+  text-align: left;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+img,
+object,
+embed {
+  vertical-align: top;
+}
+
+hr, legend {
+  display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+img, abbr, acronym, fieldset {
+  border: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* YUI 3.4.1 (build 4118) Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License. http://yuilibrary.com/license/ */
+body {
+  font: 13px/1.231 arial, helvetica, clean, sans-serif;
+  *font-size: small;
+  *font: x-small;
+}
+
+select, input, button, textarea {
+  font: 99% arial,helvetica,clean,sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+pre, code, kbd, samp, tt {
+  font-family: monospace;
+  *font-size: 108%;
+  line-height: 100%;
+}
+
+/* 汎用クラス */
+[class^="mark"] {
+  padding-left: 15px;
+  background: no-repeat left .5em;
+}
+
+.mark1 {
+  background-image: url(../img/share/mark_1.gif);
+}
+
+.mark2 {
+  background-image: url(../img/share/mark_2.gif);
+}
+
+.mark3 {
+  background-image: url(../img/share/mark_3.gif);
+}
+
+.mark4 {
+  background-image: url(../img/share/mark_4.gif);
+}
+
+.mark5 {
+  background-image: url(../img/share/mark_5.gif);
+}
+
+.opacity, .opTest img:hover {
+  opacity: 0.55;
+  -moz-opacity: 0.55;
+  filter: alpha(opacity=55.0);
+  -ms-filter: "alpha(opacity=55.0)";
+}
+
+.inline_block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.table_cell {
+  display: table-cell;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+.fr,
+.imgR {
+  float: right;
+  margin-left: 10px;
+}
+
+.fl,
+.imgL {
+  float: left;
+  margin-right: 10px;
+}
+
+.imgC,
+.tC,
+.btn {
+  text-align: center;
+}
+
+.imgC {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tR,
+.sign {
+  text-align: right;
+}
+
+.box_size, .test {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ts_none {
+  -webkit-text-shadow: none !important;
+  -moz-text-shadow: none !important;
+  -ms-text-shadow: none !important;
+  -o-text-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.bs_none {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* clearfix */
+.clearfix, .test, #contents, #header #nav {
+  *zoom: 1;
+}
+.clearfix:after, .test:after, #contents:after, #header #nav:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/* TEST */
+.test {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 5px 10px 2px 12%;
+  -moz-border-radius: 5px 10px 2px 12%;
+  -ms-border-radius: 5px 10px 2px 12%;
+  -o-border-radius: 5px 10px 2px 12%;
+  border-radius: 5px 10px 2px 12%;
+  -webkit-background-size: 100px auto;
+  -moz-background-size: 100px auto;
+  -ms-background-size: 100px auto;
+  -o-background-size: 100px auto;
+  background-size: 100px auto;
+  min-height: 777px;
+  _height: 777px;
+  background: url(../img/share/bg_test.gif);
+  font-size: 139%;
+}
+
+/*----------------------------------------------------
+	element style
+----------------------------------------------------*/
+body {
+  background: white;
+  border-top: 4px solid #e73562;
+  color: #333333;
+  font-family: "メイリオ", "Meiryo", verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+
+input, textarea {
+  font-family: "メイリオ", "Meiryo", verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+
+* html body, * html input, * html textarea {
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+
+.externalIcon {
+  margin: 0 3px;
+  vertical-align: middle;
+}
+
+a:link {
+  color: #0066ff;
+}
+a:visited {
+  color: #3399ff;
+}
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+a:active {
+  color: blue;
+}
+
+/*----------------------------------------------------
+	#page
+----------------------------------------------------*/
+#page {
+  width: 940px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #eeeeee;
+  font-size: 93%;
+}
+
+/*----------------------------------------------------
+	#contents
+----------------------------------------------------*/
+#contents {
+  width: 920px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #ccc;
+}
+#contents .pageTop {
+  clear: both;
+  margin: 0;
+  text-align: right;
+}
+
+/*----------------------------------------------------
+	ヘッダー
+----------------------------------------------------*/
+#header {
+  width: 940px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+#header #nav li {
+  float: left;
+}
+
+/*----------------------------------------------------
+	フッター
+----------------------------------------------------*/
+#footer {
+  width: 940px;
+  background: #ccc;
+}
+#footer .copyright {
+  text-align: center;
+}
+
+/*----------------------------------------------------
+	#main
+----------------------------------------------------*/
+#main {
+  float: left;
+  width: 600px;
+  background: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+#main table, #main ol, #main ul, #main dl, #main blockquote, #main pre, #main p {
+  margin-bottom: 15px;
+}
+
+/*----------------------------------------------------
+	#sub
+----------------------------------------------------*/
+#sub {
+  float: right;
+  width: 310px;
+  background: white;
+}
+
+/*----------------------------------------------------
+	印刷用スタイル
+----------------------------------------------------*/
+@media print {
+  * html body {
+    zoom: .7;
+  }
+}

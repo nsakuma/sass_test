@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/*----------------------------------------------------
+リセット
+----------------------------------------------------*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+q:before, q:after {
+  ontent: '';
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* clearfix */
+[class^="mark"] {
+  padding-left: 15px;
+  background: no-repeat left .5em;
+}
+
+.mark1 {
+  background-image: url(../img/icon/mark_1.gif);
+}
+
+.mark2 {
+  background-image: url(../img/icon/mark_2.gif);
+}
+
+.mark3 {
+  background-image: url(../img/icon/mark_3.gif);
+}
+
+.mark4 {
+  background-image: url(../img/icon/mark_4.gif);
+}
+
+.mark5 {
+  background-image: url(../img/icon/mark_5.gif);
+}
+
+.opacity {
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "alpha(opacity=50)";
+}
+
+.inline_block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.table_cell {
+  display: table-cell;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+.fr,
+.imgR {
+  float: right;
+  margin-right: 10px;
+}
+
+.fl,
+.imgL {
+  float: left;
+}
+
+.imgC,
+.tC,
+.btn {
+  text-align: center;
+}
+
+.imgC {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tR,
+.sign {
+  text-align: right;
+}
+
+.box_size {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ts_none {
+  -webkit-text-shadow: none !important;
+  -moz-text-shadow: none !important;
+  -ms-text-shadow: none !important;
+  -o-text-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.bs_none {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/*----------------------------------------------------
+ページ共通
+----------------------------------------------------*/
+body {
+  background: white;
+  color: #333333;
+  font-family: "メイリオ", "Meiryo", verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+
+a:link {
+  color: #0066ff;
+}
+a:visited {
+  color: #3399ff;
+}
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+a:active {
+  color: blue;
+}
+
+/*----------------------------------------------------
+大枠
+----------------------------------------------------*/
+#wrapper {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*----------------------------------------------------
+ヘッダー
+----------------------------------------------------*/
+#header {
+  width: 800px;
+  margin-bottom: 30px !important;
+  background: #fff;
+}
+#header h1 {
+  width: 250px;
+  height: 150px;
+}
+#header h1 a {
+  display: block;
+}
+#header ul.link {
+  overflow: hidden;
+}
+#header ul.link li {
+  float: left;
+}
+#header ul.link li a {
+  display: block;
+}
+
+/*----------------------------------------------------
+ナビゲーション
+----------------------------------------------------*/
+.sprites-sprite {
+  background: url('../images/sprites-s9a2a91e383.png') no-repeat;
+}
+
+.icons-sprite {
+  display: block;
+  text-indent: -9999px;
+  width: 32px;
+  height: 32px;
+}
+
+.facebook {
+  background-position: 0 -70px;
+}
+
+.rss {
+  background-position: 0 0;
+}
+
+#nav {
+  *zoom: 1;
+}
+#nav:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+#nav li {
+  float: left;
+}
+
+/*----------------------------------------------------
+#contents
+----------------------------------------------------*/
+#contents {
+  width: 780px;
+  padding: 10px;
+  margin-bottom: 30px !important;
+  background: #ccc;
+}
+#contents .pageTop {
+  clear: both;
+  margin: 0;
+  text-align: right;
+}
+
+/*----------------------------------------------------
+フッター
+----------------------------------------------------*/
+#footer {
+  *zoom: 1;
+  width: 800px;
+  background: #ccc;
+}
+#footer:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+#footer .copyright {
+  text-align: center;
+}
