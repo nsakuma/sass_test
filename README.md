@@ -1,7 +1,6 @@
 ## SASS&COMPASS view code
 
 ### 【SCSS module】
-
 style.scss（上記モジュールインクルード）  
 ∟_common.scss（ヘッダー、フッター、ベースライン）  
 ∟_mixin.scss  
@@ -9,4 +8,4 @@ style.scss（上記モジュールインクルード）
 ∟_setting.scss（セッティング用）  
 
 
-*_top.scss（TOPページ用）
+_top.scss（TOPページ用）
