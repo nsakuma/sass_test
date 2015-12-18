@@ -24,6 +24,7 @@ a {
 		color: $link_color_active;
 	}
 }
+
 /*----------------------------------------------------
 大枠
 ----------------------------------------------------*/
@@ -81,8 +82,6 @@ $sprites: sprite-map("sprites/*.png");
   background-position: sprite-position( $sprites, rss );
 }
 
-
-
 #nav {
 	@include clearfix;
 	li {
@@ -94,7 +93,7 @@ $sprites: sprite-map("sprites/*.png");
 #contents
 ----------------------------------------------------*/
 #contents {
-	@extend .clearfix;
+	@include clearfix;
 	width: $base_width - 20px;
 	padding: 10px;
 	margin-bottom: $mb30;
