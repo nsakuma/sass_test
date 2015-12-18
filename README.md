@@ -1,6 +1,6 @@
 # sass_test
 
-*SCSS構成モジュール
+## SCSS構成モジュール
 *_common.scss（ヘッダー、フッター、ベースライン）
 *_mixin.scss
 *_reset.scss
